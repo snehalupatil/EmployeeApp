@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Form.css">
+        <title>Employee Management System</title>
+    </head>
+    <body>
+        <form>
+            <header class="header-content header"><h1>Add Employee</h1></header> 
+            <div>
+                <label for="text">First Name: </label>
+                <input type="text" id="text" name="text" placeholder="First Name" required>
+                <error-output class="firstname-error" for="text"></error-output>
+            </div>
+            <div>
+                <label for="text">Last Name: </label>
+                <input type="text" id="text" name="text" placeholder="Last Name" required>
+                <error-output class="lastname-error" for="text"></error-output>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <error-output class="email-error" for="email"></error-output>
+            </div>
+            <div>
+                <label for="contact">Mobile No: </label>
+                <input type="number" id="tel" name="contact" placeholder="Mobile No.">
+            </div>
+            <div>
+                <label for="salary">Salary: </label>
+                <input type="salary" id="salary" name="salary" placeholder="Salary">
+            </div>
+            <div class="bottom-buttons">
+                
+                <button>Submit</button>
+            
+            </div>
+        </form>
+    </body>
+</html>
