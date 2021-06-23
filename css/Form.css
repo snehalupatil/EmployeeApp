@@ -1,0 +1,60 @@
+html, input {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 5em;
+    background-color: rgb(91, 84, 194);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(6, 2, 14)
+}
+*{box-sizing: border-box;}
+
+form{
+    margin-top: 60px;
+    padding: 0.01em 16px;
+    background-color: rgb(240, 228, 218);
+}
+
+div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label, input, button {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label {
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+input {
+    flex: auto;
+}
+
+.bottom-buttons {
+    padding-left: 180px;
+}
+
+button {
+    margin : 0px;
+    background: #a8a9e9 0% 0% no-repeat padding-box;
+    border: 1px solid #141414;  
+    border-radius: 5px;
+    opacity: 1;
+}
