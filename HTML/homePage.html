@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../JS/form.js">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
-                0,200;0,300;0,400;0,600;1,500&display=swap"rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+   
     <title>Employee DashBoard</title>
 </head>
 <body>
@@ -16,33 +14,30 @@
   <div class="main-content">
     <div class="header-content">
       <a href="../HTML/form.html" class="add-button">
-
+        <h2>Employee DashBoard</h2>
         <img src="../assets/add-24px.svg" alt="">Add Employee</a>  
     </div><!--header-content-->
-    <div class="emp-detail-text"> <div class="emp-count">1 Employee Data Found</div>
+    <div class="emp-detail-text"> <div class="emp-count"></div>
       </div>
-    <!--Uc16 table create-->
-    <div class="table-main">
-      <table id="table-display" class="table">
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Salary</th>
-          <th>City</th>
-          <th>Delete</th>
-          <th>Edit</th>
-        </tr>
-        <tr>
-        <td>Snehal</td>
-        <td>Patil</td>
-        <td>400000</td>
-        <td>Sangli</td>
-        <td><img id="1" onclick="remove(this)" src="../assets/delete-black-18dp.svg" alt="delete"></td>    
-        <td><img id="1" onclick="update(this)" src="../assets/create-black-18dp.svg" alt="edit"></td>
-        </tr>
-      </table>
-      <hr>
-  </div><!-- table-main -->
-  </div><!--mai-content-->
+    
+    <div class="form-action-buttons">
+      <td>
+        <table class="list" id="employeeList">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Salary</th>
+              <th>Email</th>
+              <th>City</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <script src="../JS/form.js"></script>
 </body>
 </html>
