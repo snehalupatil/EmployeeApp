@@ -21,7 +21,7 @@ form {
 
 body > table {
   width: 100%;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 10px auto;
   padding: 5em;
   background-color: rgb(175, 171, 231);
