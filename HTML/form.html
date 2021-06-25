@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="header-content header">
-    <h1>Add Employee</h1>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,27 +15,30 @@
             onsubmit="event.preventDefault();onFormSubmit();"
             autocomplete="off"
           >
+            <h1>Add Employee</h1>
             <div>
               <label>First Name*</label
-              ><label class="validation-error hide" id="fullNameValidationError"
-                >This field is required.</label
-              >
-              <input type="text" name="fullName" id="fullName" />
+              ><label class="validation-error" id="firstNameError"></label>
+              <input type="text" name="firstName" id="firstName" />
             </div>
             <div>
-              <label>Last Name</label>
-              <input type="text" name="empCode" id="empCode" />
+              <label>Last Name*</label>
+              <label class="validation-error" id="lastNameError"></label>
+              <input type="text" name="lastName" id="lastName" />
             </div>
             <div>
-              <label>Salary</label>
+              <label>Salary*</label>
+              <label class="validation-error" id="salaryError"></label>
               <input type="text" name="salary" id="salary" />
             </div>
             <div>
-              <label>Email</label>
+              <label>Email*</label>
+              <label class="validation-error" id="emailError"></label>
               <input type="text" name="email" id="email" />
             </div>
             <div>
-              <label>City</label>
+              <label>City*</label>
+              <label class="validation-error" id="cityError"></label>
               <input type="text" name="city" id="city" />
             </div>
             <div class="form-action-buttons">
