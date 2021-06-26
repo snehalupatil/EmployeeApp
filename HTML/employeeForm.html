@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="../css/employeeForm.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="Header">
+        <div class="Header-Text">Add Employee</div>
+      </div>
+      <div class="row-content">
+        <!-- 1st div for Name  -->
+        <div class="label-text">First Name*</div>
+        <input class="input" type="text" id="firstName" />
+        <error-output class="text-error" id="firstNameError"></error-output>
+      </div>
+      <div class="row-content">
+        <div class="label-text">Last Name*</div>
+        <input class="input" type="text" id="lastName" />
+        <error-output class="text-error" id="lastNameError"></error-output>
+      </div>
+      <div class="row-content">
+        <div class="label-text">Email*</div>
+        <input class="input" type="text" id="email" />
+        <error-output class="text-error" id="emailError"></error-output>
+      </div>
+      <div class="row-content">
+        <div class="label-text">Contact*</div>
+        <input class="input" type="text" id="number" />
+        <error-output class="text-error" id="numberError"></error-output>
+      </div>
+      <div class="row-content">
+        <div class="label-text">Salary*</div>
+        <input class="input" type="text" id="salary" />
+        <error-output class="text-error" id="salaryError"></error-output>
+      </div>
+
+      <div class="row-content">
+        <div class="label-text">City*</div>
+        <input class="input" type="text" id="city" />
+        <error-output class="text-error" id="cityError"></error-output>
+      </div>
+
+      <div class="button-content">
+        <button onclick="OnFormSumbit()" class="button">Submit</button>
+      </div>
+    </div>
+    <!-- Form gets end here-->
+    <script src="../js/validations.js"></script>
+  </body>
+</html>
