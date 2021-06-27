@@ -8,15 +8,6 @@
       "salary": "s",
       "city": "Mumbai",
       "id": 1
-    },
-    {
-      "firstName": "Snehal",
-      "lastName": "Patil",
-      "email": "sneahl@gmail.com",
-      "contact": "s",
-      "salary": "s",
-      "city": "Mumbai",
-      "id": 2
     }
   ]
 }
