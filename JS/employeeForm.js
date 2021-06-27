@@ -30,18 +30,4 @@ function getData() {
         }document.querySelector(".count").textContent = data.length;
     }
 }
-/**
-const onDelete = (id) => {
-    $.ajax({
-        type: 'DELETE',
-        url: 'http://localhost:3000/employees/' + id,
-        success: function (result) {
-            console.log(result)
-            window.location.reload();
-        },
-        error: function (result) {
-            console.log(result);
-        }
-    });
-} **/
 
