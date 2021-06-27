@@ -27,7 +27,7 @@
 
 .add-button {
   margin-top: 30px;
-  margin-right: 50px;
+  margin-left: 20px;
   font: normal normal normal 25px/29px Roboto;
   color: #ffffff;
   opacity: 1;
@@ -48,7 +48,8 @@
   font-size: 25px;
 }
 .table-main {
-  width: 100%;
+  width: 10%;
+  height: 40%;
 }
 
 .table-main {
@@ -58,7 +59,8 @@
 }
 
 .table {
-  width: 100%;
+  height: 40%;
+  width: 80%;
   min-width: 10px;
 }
 
@@ -69,6 +71,7 @@ th {
 
 th {
   background: #c77272 0% 0% no-repeat padding-box;
+  height: 40%;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
