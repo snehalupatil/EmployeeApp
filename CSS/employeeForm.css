@@ -1,11 +1,8 @@
 .body {
   margin: 0;
-
-  height: 400vh;
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgb(224, 223, 238);
 }
 
@@ -19,6 +16,7 @@
   width: 500px;
   height: 70vh;
   margin-top: 100px;
+  margin-left: 500px;
   flex-direction: column;
 }
 
@@ -29,7 +27,6 @@
   text-transform: capitalize;
   opacity: 1;
   font-family: auto;
-  text-decoration: underline;
 }
 
 .row-content {
