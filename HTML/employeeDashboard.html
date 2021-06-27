@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
     <title>Employee Dashboard</title>
   </head>
   <body class="body">
@@ -36,62 +37,56 @@
         </table>
       </div>
     </div>
-    
+
     <div id="myModal" class="modal">
       <div class="modal-content">
-          <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>Edit employee details</h2>
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Edit employee details</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row-content">
+            <div class="label-text">First Name*</div>
+            <input class="input" type="text" id="firstName" />
+            <error-output class="text-error" id="firstNameError"></error-output>
           </div>
-          <div class="modal-body">
-            <div class="row-content">
-              <div class="label-text">First Name*</div>
-              <input class="input" type="text" id="firstName" />
-              <error-output class="text-error" id="firstNameError"></error-output>
-            </div>
-            <div class="row-content">
-              <div class="label-text">Last Name*</div>
-              <input class="input" type="text" id="lastName" />
-              <error-output class="text-error" id="lastNameError"></error-output>
-            </div>
-            <div class="row-content">
-              <div class="label-text">Email*</div>
-              <input class="input" type="text" id="email" />
-              <error-output class="text-error" id="emailError"></error-output>
-            </div>
-            <div class="row-content">
-              <div class="label-text">Contact*</div>
-              <input class="input" type="text" id="number" />
-              <error-output class="text-error" id="numberError"></error-output>
-            </div>
-            <div class="row-content">
-              <div class="label-text">Salary*</div>
-              <input class="input" type="text" id="salary" />
-              <error-output class="text-error" id="salaryError"></error-output>
-            </div>
-            <div class="row-content">
-              <div class="label-text">City*</div>
-              <input class="input" type="text" id="city" />
-              <error-output class="text-error" id="cityError"></error-output>
-            </div>
+          <div class="row-content">
+            <div class="label-text">Last Name*</div>
+            <input class="input" type="text" id="lastName" />
+            <error-output class="text-error" id="lastNameError"></error-output>
           </div>
+          <div class="row-content">
+            <div class="label-text">Email*</div>
+            <input class="input" type="text" id="email" />
+            <error-output class="text-error" id="emailError"></error-output>
+          </div>
+          <div class="row-content">
+            <div class="label-text">Contact*</div>
+            <input class="input" type="text" id="number" />
+            <error-output class="text-error" id="numberError"></error-output>
+          </div>
+          <div class="row-content">
+            <div class="label-text">Salary*</div>
+            <input class="input" type="text" id="salary" />
+            <error-output class="text-error" id="salaryError"></error-output>
+          </div>
+          <div class="row-content">
+            <div class="label-text">City*</div>
+            <input class="input" type="text" id="city" />
+            <error-output class="text-error" id="cityError"></error-output>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button onclick="OnFormSumbit()" class="button">Update</button>
+        </div>
       </div>
     </div>
-    
-          </div>
-          <div class="modal-footer">
-              <button onclick="done()" class="button">Update</button>
-          </div>
-      </div>
-  </div>
-  <script>
+    <script>
       var span = document.getElementsByClassName("close")[0];
-      span.onclick = function() {
-          modal.style.display = "none";
-      }
-  </script> 
-
-
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

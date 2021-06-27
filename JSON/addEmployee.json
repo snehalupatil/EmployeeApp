@@ -8,6 +8,15 @@
       "salary": "s",
       "city": "Mumbai",
       "id": 1
+    },
+    {
+      "firstName": "Rushi",
+      "lastName": "Patil",
+      "email": "patilsnehal4575@gmail.com",
+      "contact": "8888888888",
+      "salary": "11111111",
+      "city": "Sangli",
+      "id": 2
     }
   ]
 }
