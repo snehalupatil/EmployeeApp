@@ -3,19 +3,19 @@
     {
       "firstName": "Snehal",
       "lastName": "Patil",
-      "email": "s",
-      "contact": "s",
-      "salary": "s",
+      "email": "patilsnehal4575@gmail.com",
+      "contact": "9999999999",
+      "salary": "666666",
       "city": "Mumbai",
       "id": 1
     },
     {
       "firstName": "Rushi",
       "lastName": "Patil",
-      "email": "patilsnehal4575@gmail.com",
+      "email": "rushi@gmail.com",
       "contact": "8888888888",
-      "salary": "11111111",
-      "city": "Sangli",
+      "salary": "7777777",
+      "city": "Pune",
       "id": 2
     }
   ]
