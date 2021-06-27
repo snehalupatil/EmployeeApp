@@ -55,7 +55,6 @@
   width: 10%;
   height: 50%;
   min-width: 1000px;
-  border-color: rgb(177, 106, 106);
 }
 
 .table {
@@ -66,8 +65,6 @@
 td,
 th {
   text-align: center;
-  padding: 4px 8px;
-  border: 1px solid #201d1d;
 }
 
 th {
@@ -76,11 +73,6 @@ th {
   color: #000000;
   text-transform: uppercase;
   opacity: 1;
-}
-
-tr:not(:first-child) {
-  background: rgb(201, 189, 189) 0% 0% no-repeat padding-box;
-  border: 1px solid #e3e3e3;
 }
 
 td {

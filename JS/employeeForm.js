@@ -3,14 +3,14 @@ function getData() {
         type: 'GET',
         url: 'http://localhost:3000/employees',
         success: function (result) {
-            insertRecord(result);
+            insertTable(result);
         },
         error: function (result) {
             console.log(result);
         }
     });
 
-    insertRecord = (data) => {
+    insertTable = (data) => {
         let row = "";
         for (let i = 0; i < data.length; i++) {
             row =
@@ -22,7 +22,7 @@ function getData() {
                     <td>${data[i].salary}</td>
                     <td>${data[i].city}</td>
                     <td>
-                    <img id="1" onclick="onDelete(${data[i].id})" alt="delete" width=20% src="../images/delete-black-18dp.svg">
+                    <img id="1" onclick="remove(${data[i].id})" alt="delete" width=20% src="../images/delete-black-18dp.svg">
                     <img id="1" onclick="update(this)" alt="edit" width=20% src="../images/create-black-18dp.svg">
                     </td>
                 </tr>`;
@@ -30,7 +30,7 @@ function getData() {
         }document.querySelector(".count").textContent = data.length;
     }
 }
-
+/**
 const onDelete = (id) => {
     $.ajax({
         type: 'DELETE',
@@ -43,4 +43,5 @@ const onDelete = (id) => {
             console.log(result);
         }
     });
-}
+} **/
+

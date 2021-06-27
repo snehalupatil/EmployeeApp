@@ -1,5 +1,22 @@
 {
   "employees": [
-    
+    {
+      "firstName": "Snehal",
+      "lastName": "Patil",
+      "email": "s",
+      "contact": "s",
+      "salary": "s",
+      "city": "Mumbai",
+      "id": 1
+    },
+    {
+      "firstName": "Rushi",
+      "lastName": "Patil",
+      "email": "w",
+      "contact": "w",
+      "salary": "w",
+      "city": "Mumbai",
+      "id": 2
+    }
   ]
 }
