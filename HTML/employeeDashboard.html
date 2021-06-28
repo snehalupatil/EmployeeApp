@@ -10,7 +10,6 @@
   </head>
   <body class="body">
     <div class="main-content">
-      <!-- Declaring main content -->
       <div class="header-content">
         <a href="../html/employeeForm.html" class="add-button">
           <img src="../images/add-24px.svg" alt="" />Add Employee
@@ -45,6 +44,7 @@
           <h2>Edit employee Records</h2>
         </div>
         <div class="modal-body">
+          <div class="flex1">
           <div class="row-content">
             <div class="label-text">First Name*</div>
             <input class="input" type="text" id="firstName" />
@@ -85,13 +85,13 @@
       var span = document.getElementsByClassName("close")[0];
       span.onclick = function () {
         modal.style.display = "none";
-      };
+      }
 
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      };
+      }
     </script>
 
     <script

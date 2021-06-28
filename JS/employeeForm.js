@@ -23,13 +23,28 @@ function getData() {
                     <td>${data[i].city}</td>
                     <td>
                     <img onclick="onDelete(${data[i].id})" alt="delete" width=20% src="../images/delete-black-18dp.svg">
-                    <img id="btn" src="../images/create-black-18dp.svg" width=20% type="button" onclick="update('${data[i].firstName}','${data[i].lastName}','${data[i].email}','${data[i].contact}','${data[i].salary}','${data[i].city}')"> 
+                    <img onclick="openModel('${data[i].firstName}','${data[i].lastName}','${data[i].email}','${data[i].contact}','${data[i].salary}','${data[i].city}')"  src="../images/create-black-18dp.svg" width=20% type="button"> 
                     </td>
                 </tr>`;
             $('#table-display').append(row);
         }document.querySelector(".count").textContent = data.length;
     }
 }
+
+
+const onDelete = (id) => {
+    $.ajax({
+        type: 'DELETE',
+        url: 'http://localhost:3000/employees/' + id,
+        success: function (result) {
+            console.log(result)
+            window.location.reload();
+        },
+        error: function (result) {
+            console.log(result);
+        }
+    });
+} 
 
 
 
@@ -72,57 +87,5 @@ function postData() {
         document.getElementById("email").value = '';
     }
 }
-var modal = document.getElementById("myModel");
-function update(firstName, lastName, city, contact, salary, email) {
-    modal.style.display = "block";
-    document.getElementById("firstName").value = firstName;
-    document.getElementById("lastName").value = lastName;
-    document.getElementById("city").value = city;
-    document.getElementById("contact").value = contact;
-    document.getElementById("salary").value = salary;
-    document.getElementById("email").value = email;
-}
-function putData() {
-    let firstName = document.getElementById("firstName").value;
-    let lastName = document.getElementById("lastName").value;
-    let city = document.getElementById("city").value;
-    let contact = document.getElementById("contact").value;
-    let salary = document.getElementById("salary").value;
-    let email = document.getElementById("email").value;
 
-    let putUserData = {
-        firstName: firstName,
-        lastName: lastName,
-        city: city,
-        contact: contact,
-        salary: salary,
-        email: email
-    }
-
-    $.ajax({
-        type: 'PUT',
-        url: 'http://localhost:3000/employees/' + id,
-        data: putUserData,
-        success: function (result) {
-            getData();
-        },
-        error: function (result) {
-            console.log(result);
-        }
-    });
-}
-
-const onDelete = (id) => {
-    $.ajax({
-        type: 'DELETE',
-        url: 'http://localhost:3000/employees/' + id,
-        success: function (result) {
-            console.log(result)
-            window.location.reload();
-        },
-        error: function (result) {
-            console.log(result);
-        }
-    });
-} 
 
